@@ -14,37 +14,37 @@ int main(){
 }
 /*
 #0: 5% AC (2ms, 324KB)
-硄筁浪代
+通過檢測
 #1: 5% AC (2ms, 328KB)
-硄筁浪代
+通過檢測
 #2: 5% AC (2ms, 324KB)
-硄筁浪代
+通過檢測
 #3: 5% AC (2ms, 312KB)
-硄筁浪代
+通過檢測
 #4: 5% AC (2ms, 320KB)
-硄筁浪代
+通過檢測
 #5: 5% AC (2ms, 320KB)
-硄筁浪代
+通過檢測
 #6: 5% AC (2ms, 324KB)
-硄筁浪代
+通過檢測
 #7: 5% AC (2ms, 308KB)
-硄筁浪代
+通過檢測
 #8: 5% AC (2ms, 316KB)
-硄筁浪代
+通過檢測
 #9: 5% AC (2ms, 300KB)
-硄筁浪代
+通過檢測
 #10: 5% AC (2ms, 284KB)
-硄筁浪代
+通過檢測
 #11: 5% AC (2ms, 312KB)
-硄筁浪代
+通過檢測
 #12: 5% AC (2ms, 308KB)
-硄筁浪代
+通過檢測
 #13: 5% AC (2ms, 304KB)
-硄筁浪代
+通過檢測
 #14: 5% AC (2ms, 300KB)
-硄筁浪代
+通過檢測
 #15: 5% AC (2ms, 312KB)
-硄筁浪代
+通過檢測
 #16: 5% AC (2ms, 324KB)
 硄筁浪代
 #17: 5% AC (2ms, 308KB)
