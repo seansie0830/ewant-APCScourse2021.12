@@ -1,5 +1,5 @@
-// ·sª©¥»(2022.3.22)  ¤É¯Å¦¨§¹¾ãªº½ò¦a¹p
-//
+// ï¿½sï¿½ï¿½ï¿½ï¿½(2022.3.22)  ï¿½É¯Å¦ï¿½ï¿½ï¿½ï¿½ãªºï¿½ï¿½aï¿½p
+// ! encoding!!
 #include<iostream>
 using namespace std;
 int width,height,bomb_num;
@@ -7,11 +7,11 @@ void show(int*);
 void mark(int*);
 int main(){
     // initialization
-    cout<<"½Ð¿é¤J¦a¹Ïªºªø"<<endl;
+    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½Ïªï¿½ï¿½ï¿½"<<endl;
     cin>>width;
-    cout<<"½Ð¿é¤J¦a¹Ïªº°ª"<<endl;
+    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½Ïªï¿½ï¿½ï¿½"<<endl;
     cin>>height;
-    cout<<"½Ð¿é¤J¦a¹pªº¼Æ¶q"<<endl;
+    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½pï¿½ï¿½ï¿½Æ¶q"<<endl;
     cin>>bomb_num;
     int map[height][width]={0};
     cin>>width;
