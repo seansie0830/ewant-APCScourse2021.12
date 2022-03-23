@@ -1,23 +1,31 @@
-// ï¿½sï¿½ï¿½ï¿½ï¿½(2022.3.22)  ï¿½É¯Å¦ï¿½ï¿½ï¿½ï¿½ãªºï¿½ï¿½aï¿½p
-// ! encoding!!
+// ·sª©¥»(2022.3.22)  ¤É¯Å¦¨§¹¾ãªº½ò¦a¹p
+// ! the matrix isn't initialized yet
 #include<iostream>
 using namespace std;
-int width,height,bomb_num;
-void show(int*);
+int width,height,bomb_num,i,j;
+void show(int*,int,int);
 void mark(int*);
 int main(){
     // initialization
-    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½Ïªï¿½ï¿½ï¿½"<<endl;
+    cout<<"½Ð¿é¤J¦a¹Ïªºªø"<<endl;
     cin>>width;
-    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½Ïªï¿½ï¿½ï¿½"<<endl;
+    cout<<"½Ð¿é¤J¦a¹Ïªº°ª"<<endl;
     cin>>height;
-    cout<<"ï¿½Ð¿ï¿½Jï¿½aï¿½pï¿½ï¿½ï¿½Æ¶q"<<endl;
+    cout<<"½Ð¿é¤J¦a¹pªº¼Æ¶q"<<endl;
     cin>>bomb_num;
-    int map[height][width]={0};
+    int map[height][width];
+    for(int i=0;i<height;i++)for(int j=0;j<width;j++)map[i][j]=0;
+    show(&map[0][0],width,height);
     cin>>width;
 }
-void show(int *map_ref){
-
+void show(int *map_ref,int width,int height){
+    int i,j;
+    for(i=0;i<height;i++){
+        for(j=0;j<width;j++){
+            if(*(map_ref+(i*width+j))==0) cout<<"  ?  ";
+        }
+        cout<<endl<<endl;
+    }
 }
 void mark(int *map_ref) {
 
