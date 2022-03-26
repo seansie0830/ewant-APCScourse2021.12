@@ -11,6 +11,7 @@ int main(){
     init();
     int map[height][width];
     for(int i=0;i<height;i++)for(int j=0;j<width;j++)map[i][j]=0;
+    bury_bomb(&map[0][0],bomb_num,width,height);
     show(&map[0][0],width,height);
     cin>>width;
 }
@@ -51,15 +52,12 @@ void init(){
 void mark(int *map_ref) {
 
 }
-void bury_bomb(int *map_ref,int bomb_num,int width,int height){
-    int pick_id;
-    while(bomb_num>0){
-        pick_id =rand()%width*height+1;
-        if(*(map_ref+pick_id)==0){
-            // bury_bomb at the specified place
-            *(map_ref+pick_id)=1;
-            bomb_num--;
-        }
-        else continue;
+void bury_bomb(int *map_ref,int bomb_num,int width,int height){ 
+    int i; // ! bug  ¤£°÷¥­§¡¤À¥¬
+    for(i=0;i<bomb_num;i++){
+        *(map_ref+i)=1;
+    }
+    for(i=0;i<100;i++){
+        swap(*(map_ref+rand()%(width*height)),*(map_ref+rand()%(width*height)));
     }
 }
