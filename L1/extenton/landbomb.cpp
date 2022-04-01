@@ -1,5 +1,5 @@
 // 新版本(2022.3.22)  升級成完整的踩地雷
-// ! the matrix isn't initialized yet
+// TODO　ｍａｋｅ　ｓｈｏｗ　ｆｕｎｃ　ｈａｖｅ　ｓｃａｌｅ  
 #include<bits/stdc++.h>
 using namespace std;
 int width,height,bomb_num,i,j;
@@ -50,7 +50,27 @@ void init(){
     }
 }
 void mark(int *map_ref) {
-
+    int x,y;
+    char cmd;
+    while(true){
+        cout<<"請輸入位置(ex:1 2) 最後輸入想要的動作(標記:M 取消標記:U 點開:C)"<<endl;
+        cin>>x>>y>>cmd;
+        // checkpoint
+        if(x<0){
+            cout<<"x座標小於0，格式錯誤。"<<endl;
+            continue;
+        }
+        if(y<0){
+            cout<<"y座標小於0，格式錯誤"<<endl;
+            continue;
+        }
+        if(cmd!="M"&&cmd!="U"&&cmd!="C"&&cmd!="m"&&cmd!="c"&&cmd!="u"){
+            cout<<"動作代碼不符，請重新輸入"<<endl;
+            continue;
+        }
+    }
+    
+    
 }
 void bury_bomb(int *map_ref,int bomb_num,int width,int height){ 
     int i; // ! bug  不夠平均分布
